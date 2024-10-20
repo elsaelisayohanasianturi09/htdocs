@@ -1,0 +1,709 @@
+* {
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #f3f5f9;
+
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+
+.wrapper .sidebar {
+    position:fixed;
+    width: 190px;
+    height: 100%;
+    background:rgb(42, 41, 41);
+    padding: 30px 0;
+
+}
+
+.wrapper .sidebar .logo {
+    display: block; 
+}
+
+.wrapper .sidebar .logo a img {
+    width: 70%;
+    height: 70%;
+    border-radius: 100px;
+    margin-left: 30px;
+}
+
+.wrapper .sidebar .logo h1 {
+    color: #f0c9f3;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    font-size: 3rem;
+    margin-left: 45px;
+    font-family: 'merienda', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.wrapper .sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225,0.05);
+    margin-left: -20px;
+}
+
+.wrapper .sidebar ul li a {
+    color: #bdb8d7 ;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.wrapper .sidebar ul li a i {
+    margin-right: 7px;
+}
+
+.wrapper .sidebar ul li a  .fas {
+    width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+    background: rgb(103, 102, 102);
+}
+
+
+.wrapper .sidebar ul li:hover a {
+    color: #fff;
+    transition: 0.3 ease-in;
+}
+
+.wrapper .sidebar .social_media {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.wrapper .sidebar .social_media a {
+    display:block;
+    width: 40px;
+    background: grey;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 5px;
+    color: #2c2a2a;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.wrapper .sidebar .social_media a i:hover {
+    color: #ffffff;
+    transition: 0.3 ease
+}
+
+.wrapper .sidebar .social_media a i {
+    font-size: 24px;
+}
+
+#main_content {
+    width: 100%;
+    margin-left: 200px;
+    margin-right: 0px;
+}
+
+#main_content .header h1 {
+    padding: 20px;
+    background: #fff;
+    color: rgb(92, 4, 92);
+    border-bottom: 1px solid #e0e4e8;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 600;
+    font-family: 'merienda', sans-serif;
+}
+
+
+.wrapper .main_content #info {
+    margin: 20px;
+    color: #717171;
+    line-height: 20px;
+}
+
+#main_content #info .propil {
+    display: flex;
+}
+
+#main_content #info .propil figure img {
+    width: 150%;
+    height: 60%;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 200px;
+    margin-left: -60px;
+
+}
+
+#main_content #info .propil .propill h1 {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-family: 'poppins', sans-serif;
+    color: #664573;
+    font-weight: 400;
+}
+
+#main_content #info .propil .propill h2 {
+    margin-top: 5px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+#main_content #info .propil .propill h5 {
+    margin-left: 100px;
+    padding-right: 150px;
+    text-align: center;
+    font-style: italic;
+    color: rgb(151, 149, 149);
+}
+
+
+#main_content #info .propil .propill h5 span {
+    font-weight: 700;
+}
+
+#main_content #info .propil .propill p{
+    margin-right: 90px;
+    margin-left: 20px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+#main_content #info .propil .propill p span {
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+}
+
+#brand {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#brand img {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#brand .brand1 {
+    display: block;
+}
+
+#brand .brand1 img {
+    width: 100%;
+}
+
+#brand .brand1 p {
+    padding-left: 20px;
+    text-align: justify;
+}
+
+#brand .brand1 p span {
+    font-weight: 600;
+}
+
+#awards {
+    display:flex;
+    gap: 80px;
+}
+
+
+#awards .picawards {
+    width: 20%;
+    height: 20%;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+
+#awards .awards1 {
+    display: block;
+    margin-left: 70px;
+}
+
+#awards .awards1 img {
+    width: 40%;
+    height:auto;
+    padding-top: 40px;
+}
+
+footer {
+    background-color: rgb(42, 41, 41); 
+    color: white; 
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+}
+
+footer .footerr h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'poppins';
+    color: rgb(221, 218, 213);
+}
+
+footer .footerr p {
+    margin: 1px 0 0;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-family: 'poppins';
+}
+
+/* FANPAGE */
+
+#main_contentfp {
+    margin-left: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main_contentfp h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#main_contentfp form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 71%;
+}
+
+#main_contentfp form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-weight: 500;
+}
+
+#main_contentfp form input, textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#main_contentfp form input:focus, textarea:focus {
+    border-color: #6c5ce7;
+    outline: none;
+}
+
+#main_contentfp form textarea {
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 30px;
+}
+
+#main_contentfp form .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+
+#main_contentfp .checkbox-group .checkbox-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+#main_contentfp .checkbox-group .checkbox-item input[type="checkbox"] {
+    margin-right: 7px;
+    margin-top: 11px;
+    margin-left: 2px;
+}
+
+#main_contentfp .checkbox-group .checkbox-item label {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    padding-bottom: 0px;
+}
+
+
+
+#main_contentfp form button {
+    padding: 10px;
+    width: 10%;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 40%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom:30px;
+}
+
+#main_contentfp form button:hover {
+    background-color: #000000;
+    color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+#main_contentfp img {
+    width: 27%;
+    height: 90%;
+    padding-top: 100px;
+}
+
+/* ALBUM  */
+
+#fantable {
+    margin-left: 200px;
+    margin-bottom: 20px;
+    height: 700px;
+}
+
+
+#fantable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+
+#fantable thead {
+    position: sticky;
+    top: 0;
+    background-color: #343a40;
+    color: white;
+    z-index: 100;
+}
+
+
+#fantable tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+#fantable tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+
+#fantable tbody tr:hover {
+    background-color: #d1d1d1;
+    cursor: pointer;
+}
+
+
+#fantable .table-responsive {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* LG */
+@media (min-width: 992px){
+    html{
+        font-size: 100%;
+    }
+}
+
+/* MD */
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    html{
+        font-size: 80%;
+    }
+
+    #main_content #info .propil figure {
+        width: 0%;
+        height: 0%;
+    }
+
+    #main_content #info .propil figure figcaption {
+        font-size: 0px;
+    }
+
+    .wrapper .sidebar {
+        width: 15%;
+    }
+
+    .wrapper .sidebar .logo a img {
+        width: 55%;
+        height: 55%;
+    }
+
+    .wrapper .sidebar .logo h1 {
+        font-size: 1.4rem;
+
+    }
+
+    .wrapper .sidebar .social_media a {
+        width: 30px;
+        height: 30px;
+        line-height: 35px;
+    }
+
+    .wrapper .sidebar .social_media a i {
+        font-size: 15px;
+    }
+
+    #main_content {
+        margin-left: 170px;
+    }
+
+    #awards {
+        margin-left: -20px;
+    }
+
+    #awards .awards1 {
+        margin-left: -10px;
+        margin-right: -20px;
+    }
+
+    #main_contentfp form button {
+        font-size: 1rem;
+        width: 20%;
+    }
+
+    #main_contentfp  {
+        padding: 10px;
+        margin-left: 150px;
+    }
+
+    #main_contentfp img {
+        padding-left: 10px;
+    }
+
+    #fantable {
+        margin-left: 150px;
+    }
+}
+
+/* SM */
+@media (min-width: 576px) and (max-width: 767.98px){
+    html{
+        font-size: 65%;
+    }
+
+    .wrapper .sidebar {
+        width: 20%;
+    }
+
+    .wrapper .sidebar .logo a img {
+        width: 45%;
+        height: 45%;
+    }
+
+    .wrapper .sidebar .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .wrapper .sidebar .social_media a {
+        width: 25px;
+        height: 25px;
+        line-height: 30px;
+    }
+
+    .wrapper .sidebar .social_media a i {
+        font-size: 13px;
+    }
+
+    #main_content #info .propil figure {
+        width: 0%;
+        height: 0%;
+        margin-left: 0px;
+    }
+    
+    #main_content #info .propil figure figcaption {
+        font-size: 0px;
+    }
+
+    #main_content {
+        margin-left: 130px;
+        margin-right: 0px;
+    }
+
+    #main_contentfp img {
+        width: 0%;
+        height: 0%;
+    }
+
+    #brand {
+        display: block;
+    }
+
+    #brandd {
+        width: 80%;
+        padding-top: 30px;
+        justify-content: center;
+        margin-left: 130px;
+    }
+
+    #brand .brand1 img {
+        width: 100%;
+        margin-right: 80px;
+        margin-top: -30px;
+    }
+
+    #awards .awards1 {
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    input::placeholder {
+        font-size: 1.2rem;
+    }
+
+    input[type="date"]::placeholder {
+        font-size: 1.2rem;
+    }
+
+    #main_contentfp {
+        margin-left: 150px;
+    }
+
+    #main_contentfp form button {
+        font-size: 1.2rem;
+        width: 20%;
+    }
+
+    #fantable {
+        margin-left: 150px;
+        margin-bottom: 10px;
+    }
+   
+
+    
+}
+
+/* XS */
+@media (max-width: 575.98px){
+    html{
+        font-size: 55%;
+    }
+
+    .wrapper .sidebar {
+        width: 17%;
+    }
+
+    .wrapper .sidebar .logo a img {
+        width: 45%;
+        height: 45%;
+    }
+
+    .wrapper .sidebar .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .wrapper .sidebar .social_media a {
+        width: 25px;
+        height: 25px;
+        line-height: 30px;
+    }
+
+    .wrapper .sidebar .social_media a i {
+        font-size: 13px;
+    }
+
+    .wrapper .sidebar .logo h1 {
+        margin-left: 30px;
+    }
+
+    #main_content {
+        margin-left: 100px;
+        margin-right: 0px;
+    }
+
+     #info .propil figure {
+        width: 0%;
+        height: 0%;
+    }
+    
+     #info .propil figure figcaption {
+        font-size: 0px;
+    }
+
+    #brand {
+        display: block;
+    }
+
+    #brandd {
+        margin-left: 80px;
+    }
+
+    .brand1 img {
+        margin-top: -30px;
+    }
+
+    #awards {
+        display: flex;
+        gap: 3px;
+    }
+
+    #awards .awards1 {
+        margin-left: 50px;
+  
+    }
+
+    input::placeholder {
+        font-size: 1.2rem;
+    }
+
+    input[type="date"]::placeholder {
+        font-size: 1.2rem;
+    }
+
+    #main_contentfp {
+        margin-left: 150px;
+    }
+
+    #main_contentfp form button {
+        font-size: 1rem;
+        width: 25%;
+    }
+
+    #fantable {
+        margin-left: 120px;
+        margin-bottom: 10px;
+    }
+
+    #main_contentfp img {
+        width: 0%;
+        height: 0%;
+    }
+
+
+
+}
